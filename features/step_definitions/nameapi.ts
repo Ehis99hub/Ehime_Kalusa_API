@@ -43,7 +43,7 @@ Then('The field name should match {string}', function (expectedName: string) {
 // Step 6: Validate that "age" is an integer
 Then('The field age should be an integer', function () {
   expect(Number.isInteger(response.data.age)).to.be.true;
-  console.log(`Age: ${response.data.age}`);
+  console.log(`Age: ${response.data.Age}`);
 });
 
 
