@@ -1,0 +1,9 @@
+Feature: Verifying the agify.io API
+
+    Scenario: Fetch age for a given name
+    Given I have the API endpoint "https://api.agify.io"
+    When I send a GET request with the parameter name "billybob"
+    Then I should get a response containing the fields count, name, and age
+    And The field count should be a number
+    And The field name should match "billybob"
+    And The field age should be an integer
