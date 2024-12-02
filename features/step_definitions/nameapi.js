@@ -1,9 +1,10 @@
-const { Given, When, Then } = require('@cucumber/cucumber');
-// import axios, { AxiosResponse } from 'axios';
+// const { Given, When, Then } = require('@cucumber/cucumber');
+import { Given, When, Then }  from '@cucumber/cucumber';
+import axios from 'axios';
 
-const axios = require('axios')
-const expect = require('chai')
-// import { expect } from 'chai';
+// const axios = require('axios');
+// const { expect } = require('chai');
+import { expect } from 'chai';
 
 let apiEndpoint; // Stores the API endpoint
 let endpointResponse; // Stores the API response
