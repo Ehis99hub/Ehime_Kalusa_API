@@ -1,4 +1,5 @@
 Feature: Verifying the agify.io API
+    verify the endpoint
 
     Scenario: Fetch age for a given name
     Given I have the API endpoint "https://api.agify.io"
