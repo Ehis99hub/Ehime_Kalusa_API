@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js --require-module ts-node/register"
+    "test": "cucumber-js"
   },
   "keywords": [],
   "author": "",
@@ -24,5 +24,6 @@
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
-  }
+  },
+  "type": "module" 
 }
