@@ -49,4 +49,18 @@ Then('The field age should be an integer', async function () {
   expect(Number.isInteger(endpointResponse.data.age)).to.be.true;
 });
 
+// Step 7: Send a GET request without the "name" parameter
+When('I send a GET request without a name', async () => {
+  response = await axios.get(endpoint).catch(err => err.response);
+});
 
+// Step 8: Send a GET request with an empty "name" parameter
+When('I send a GET request with an empty parameter name {string}', async function (name) {
+  try {
+    const params = { name }; // Add query parameters with an empty name
+    endpointResponse = await axios.get(apiEndpoint, { params }); // Send the GET request
+    return endpointResponse;
+  } catch (error) {
+    throw new Error(`API request failed: ${error.message}`);
+  }
+});
